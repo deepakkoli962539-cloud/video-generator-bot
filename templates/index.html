@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Generator</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #0f172a; color: white; text-align: center; padding: 50px 20px; }
+        .container { max-width: 600px; margin: auto; background: #1e293b; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); }
+        h1 { color: #38bdf8; }
+        textarea { width: 100%; height: 120px; border-radius: 10px; border: none; padding: 15px; font-size: 16px; margin: 20px 0; box-sizing: border-box; }
+        button { background: #38bdf8; color: #0f172a; border: none; padding: 15px 30px; font-size: 18px; font-weight: bold; border-radius: 10px; cursor: pointer; transition: 0.3s; width: 100%; }
+        button:hover { background: #0ea5e9; transform: scale(1.02); }
+        p { color: #94a3b8; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 AI Video Maker</h1>
+        <p>Apna script likhein aur AI voice video banayein</p>
+        <form action="/generate" method="post">
+            <textarea name="text" placeholder="Yahan apna message likhein (e.g. Namaste dosto, kaise hain aap?)..." required></textarea>
+            <button type="submit">Video Generate Karein</button>
+        </form>
+    </div>
+</body>
+</html>
